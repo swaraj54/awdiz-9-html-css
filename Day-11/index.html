@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .children {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: red;
+        font-size: 42px;
+        text-align: center;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        height: 1500px;
+        border: 5px solid blue;
+      "
+    >
+      <div class="children">1</div>
+      <div
+        class="children"
+        style="
+          background-color: yellow;
+          position: relative;
+          top: 50px;
+          left: 50px;
+        "
+      >
+        2
+      </div>
+      <div class="children">3</div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        height: 1500px;
+        border: 5px solid blue;
+      "
+    >
+      <div class="children">1</div>
+      <div
+        class="children"
+        style="
+          background-color: yellow;
+          position: absolute;
+          top: 50px;
+          left: 50px;
+        "
+      >
+        2
+      </div>
+      <div class="children">3</div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        height: 1500px;
+        border: 5px solid blue;
+      "
+    >
+      <div class="children">1</div>
+      <div
+        class="children"
+        style="background-color: yellow; position: sticky; top: 0px"
+      >
+        2
+      </div>
+      <div class="children">3</div>
+    </div>
+
+    <p
+      style="
+        overflow: visible;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      "
+    >
+      Maya Angelou: "I've learned that people will forget what you said, people
+      will forget what you did, but people will never forget how you made them
+      feel."
+    </p>
+    <p
+      style="
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      "
+    >
+      Maya Angelou: "I've learned that people will forget what you said, people
+      will forget what you did, but people will never forget how you made them
+      feel."
+    </p>
+    <p
+      style="
+        overflow: scroll;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      "
+    >
+      Maya Angelou: "I've learned that people will forget what you said, people
+      will forget what you did, but people will never forget how you made them
+      feel."
+    </p>
+    <p
+      style="
+        overflow: auto;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      "
+    >
+      Maya Angelou: "I've learned that people will forget what you said, people
+      will forget what you did, but people will never forget how you made them
+      feel."
+    </p>
+
+    <div
+      style="margin-left: 25%; width: 50%; border: 5px solid red; height: 400px"
+    >
+      Testing margin auto
+    </div>
+
+    <div
+      style="
+        margin: auto;
+        text-align: center;
+        width: 50%;
+        border: 5px solid red;
+        height: 400px;
+      "
+    >
+      Testing margin auto
+    </div>
+
+    <img
+      style="display: block; width: 40%; margin-left: auto; margin-right: auto"
+      src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1678190476/courses/slider/100-job-guarantee-course-in-mumbai.webp"
+    />
+  </body>
+</html>
