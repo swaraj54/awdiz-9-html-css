@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Assistant", sans-serif;
+      }
+      #screen {
+        width: 100%;
+        border: 5px solid red;
+        /* height: 600px; */
+      }
+      #navbar {
+        width: 100%;
+        border: 5px solid blue;
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #body {
+        width: 100%;
+        border: 5px solid greenyellow;
+        height: 3000px;
+      }
+      #footer {
+        width: 100%;
+        border: 5px solid green;
+        height: 200px;
+      }
+      #icon {
+        width: 6%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #navigations {
+        width: 34%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #navigations h6 {
+        font-size: 12px;
+      }
+      #search {
+        width: 34%;
+        border: 2px solid black;
+      }
+      #profile {
+        width: 10%;
+        border: 2px solid black;
+      }
+      .imgStyle {
+        width: 56%;
+        height: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <div id="navbar">
+        <div id="icon">
+          <img
+            class="imgStyle"
+            alt="Myntra"
+            src="https://cdn.iconscout.com/icon/free/png-256/free-myntra-logo-icon-download-in-svg-png-gif-file-formats--shopping-brand-online-application-app-mobile-indian-companies-pack-logos-icons-2249158.png?f=webp&w=256"
+          />
+        </div>
+        <div id="navigations">
+          <h6>MEN</h6>
+          <h6>WOMEN</h6>
+          <h6>KIDS</h6>
+          <h6>HOME & LIVING</h6>
+          <h6>BEAUTY</h6>
+          <h6>STUDIO</h6>
+        </div>
+        <div id="search">Search</div>
+        <div id="profile">Profile</div>
+      </div>
+      <div id="body">Body</div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
