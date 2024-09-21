@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,19 +26,19 @@
       }
       #screen {
         width: 100%;
-        border: 5px solid red;
+        /* border: 5px solid red; */
         /* height: 600px; */
       }
       #navbar {
         width: 100%;
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
         height: 60px;
         display: flex;
         justify-content: space-evenly;
       }
       #body {
         width: 100%;
-        border: 5px solid greenyellow;
+        /* border: 5px solid greenyellow; */
         height: 3000px;
       }
       #footer {
@@ -56,16 +64,55 @@
         font-size: 12px;
       }
       #search {
-        width: 34%;
-        border: 2px solid black;
+        width: 32%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
       }
       #profile {
-        width: 10%;
-        border: 2px solid black;
+        width: 12%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      #profile > div {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+      }
+      .iconStyle {
+        /* color: grey; */
+        font-size: 22px;
       }
       .imgStyle {
         width: 56%;
         height: 70%;
+      }
+      #searchContainer {
+        height: 66%;
+        background-color: #eeeef0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 6px;
+      }
+      .iconMargin {
+        margin: 0px 10px;
+        color: #7a7a7a;
+      }
+      .inputStlyes {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: #eeeef0;
+        font-size: 14px;
       }
     </style>
   </head>
@@ -87,8 +134,31 @@
           <h6>BEAUTY</h6>
           <h6>STUDIO</h6>
         </div>
-        <div id="search">Search</div>
-        <div id="profile">Profile</div>
+        <div id="search">
+          <div id="searchContainer">
+            <span class="material-symbols-outlined iconMargin"> search </span>
+            <input
+              class="inputStlyes"
+              placeholder="Search for products, brands and more"
+            />
+          </div>
+        </div>
+        <div id="profile">
+          <div>
+            <span class="material-symbols-outlined iconStyle"> person </span>
+            <p>Profile</p>
+          </div>
+          <div>
+            <span class="material-symbols-outlined iconStyle"> favorite </span>
+            <p>Wishlist</p>
+          </div>
+          <div>
+            <span class="material-symbols-outlined iconStyle">
+              shopping_bag
+            </span>
+            <p>Bag</p>
+          </div>
+        </div>
       </div>
       <div id="body">Body</div>
       <div id="footer">Footer</div>
