@@ -3,6 +3,10 @@
   <head>
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -114,11 +118,74 @@
         background-color: #eeeef0;
         font-size: 14px;
       }
+      #sidebar {
+        display: none;
+      }
+      @media screen and (min-width: 650px) and (max-width: 1000px) {
+        #search {
+          display: none;
+        }
+        #navigations {
+          width: 50%;
+          /* border: 1px solid black; */
+        }
+        #profile {
+          width: 20%;
+          /* border: 1px solid black; */
+        }
+      }
+
+      @media screen and (min-width: 250px) and (max-width: 649px) {
+        #search {
+          display: none;
+        }
+        #navigations {
+          display: none;
+        }
+        #profile {
+          width: 30%;
+          display: flex;
+          justify-content: end;
+          /* border: 1px solid black; */
+        }
+        #icon {
+          width: 20%;
+          /* border: 1px solid black; */
+        }
+        #sidebar {
+          width: 20%;
+          /* border: 3px solid red; */
+          display: block;
+          display: flex;
+          align-items: center;
+        }
+        #profile div:nth-child(1) {
+          display: none;
+          border: 2px solid red;
+        }
+        #profile div:nth-child(2) {
+          display: none;
+          border: 2px solid red;
+        }
+
+        /* #profile div:first-child {
+          display: none;
+        }
+        #profile div:last-child {
+          display: none;
+        } */
+        .bClass h1:first-child {
+          color: red;
+        }
+      }
     </style>
   </head>
   <body>
     <div id="screen">
       <div id="navbar">
+        <div id="sidebar">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
         <div id="icon">
           <img
             class="imgStyle"
@@ -160,7 +227,13 @@
           </div>
         </div>
       </div>
-      <div id="body">Body</div>
+      <div id="body">
+        <div class="bClass">
+          <h1>1</h1>
+          <h1>2</h1>
+          <h1>3</h1>
+        </div>
+      </div>
       <div id="footer">Footer</div>
     </div>
   </body>

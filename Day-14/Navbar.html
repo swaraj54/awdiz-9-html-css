@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        height: 60px;
+        border: 2px solid black;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      #parent > div {
+        width: 20%;
+        border: 2px solid blue;
+      }
+      #sidebar {
+        display: none;
+      }
+      @media screen and (min-width: 700px) and (max-width: 1000px) {
+        #search {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 699px) {
+        #search {
+          display: none;
+        }
+        #nav {
+          display: none;
+        }
+        #sidebar {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="sidebar">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <div id="icon">Icon</div>
+      <div id="nav">Navigations</div>
+      <div id="search">Search Bar</div>
+      <div id="profile">Profile</div>
+    </div>
+  </body>
+</html>

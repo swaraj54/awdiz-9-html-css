@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .children {
+        border: 2px solid red;
+        width: 18%;
+        height: 200px;
+        margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 550px) and (max-width: 950px) {
+        .children {
+          width: 30%;
+          border: 2px solid blue;
+        }
+      }
+      @media screen and (min-width: 200px) and (max-width: 549px) {
+        .children {
+          width: 90%;
+          border: 2px solid green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="children">1</div>
+      <div class="children">2</div>
+      <div class="children">3</div>
+      <div class="children">4</div>
+      <div class="children">1</div>
+      <div class="children">2</div>
+      <div class="children">3</div>
+      <div class="children">4</div>
+      <div class="children">1</div>
+      <div class="children">2</div>
+      <div class="children">3</div>
+      <div class="children">4</div>
+      <div class="children">2</div>
+      <div class="children">3</div>
+      <div class="children">4</div>
+    </div>
+  </body>
+</html>
