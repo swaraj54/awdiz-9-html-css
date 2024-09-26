@@ -27,7 +27,7 @@
         width: 97%;
         margin: auto;
         height: 60px;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
         justify-content: space-between;
       }
@@ -54,7 +54,7 @@
       #navbar-search-right {
         background-color: #1f1f1f;
         width: 84%;
-        height: 84%;
+        height: 76%;
         border-radius: 30px;
         display: flex;
         justify-content: space-around;
@@ -83,7 +83,34 @@
 
       #navbar-profile {
         width: 14%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
+        display: flex;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      #navbar-profile-signup {
+        background-color: #1f1f1f;
+        width: 44%;
+        height: 76%;
+        border-radius: 30px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #navbar-profile-login {
+        background-color: white;
+        width: 44%;
+        height: 76%;
+        border-radius: 30px;
+        font-size: 18px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       #body {
@@ -107,6 +134,115 @@
       }
       .material-symbols-outlined {
         font-size: 28px;
+      }
+      .font-size-18 {
+        font-size: 18px;
+      }
+      #singup {
+        font-size: 18px;
+      }
+      #login {
+        font-size: 18px;
+      }
+      @media screen and (min-width: 350px) and (max-width: 551px) {
+        #navbar-search {
+          width: 50%;
+        }
+        #singup {
+          font-size: 12px;
+        }
+        #login {
+          font-size: 12px;
+        }
+        #navbar-search-right {
+          width: 100%;
+        }
+        #navbar-search-right-input {
+          font-size: 12px;
+          width: 74%;
+        }
+        .imageContiner {
+          width: 40%;
+        }
+        #navbar-profile {
+          width: 20%;
+        }
+
+        #navbar-icon {
+          width: 18%;
+        }
+
+        #navbar-search-left {
+          display: none;
+        }
+
+        .material-symbols-outlined {
+          font-size: 24px;
+        }
+        #navbar-search-right-bicon {
+          display: none;
+        }
+
+        #navbar-profile-signup {
+          display: none;
+        }
+        #navbar-profile-login {
+          width: 70%;
+        }
+      }
+
+      @media screen and (min-width: 551px) and (max-width: 821px) {
+        #singup {
+          font-size: 12px;
+        }
+        #login {
+          font-size: 12px;
+        }
+        #navbar-search-right {
+          width: 80%;
+        }
+        #navbar-search-right-input {
+          font-size: 12px;
+          width: 54%;
+        }
+        .imageContiner {
+          width: 30%;
+        }
+        #navbar-profile {
+          width: 20%;
+        }
+
+        #navbar-icon {
+          width: 18%;
+        }
+
+        #navbar-search-left {
+          width: 16%;
+          height: 72%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .material-symbols-outlined {
+          font-size: 24px;
+        }
+      }
+      @media screen and (min-width: 821px) and (max-width: 1050px) {
+        #singup {
+          font-size: 14px;
+        }
+        #login {
+          font-size: 14px;
+        }
+        #navbar-search-right-input {
+          font-size: 14px;
+        }
+        .imageContiner {
+          width: 30%;
+        }
+      }
+      @media screen and (min-wdith: 1051px) and (max-width: 1550px) {
       }
     </style>
   </head>
@@ -145,7 +281,14 @@
             </span>
           </div>
         </div>
-        <div id="navbar-profile">Login</div>
+        <div id="navbar-profile">
+          <div id="navbar-profile-signup">
+            <p id="singup">Sign Up</p>
+          </div>
+          <div id="navbar-profile-login">
+            <p id="login">Login</p>
+          </div>
+        </div>
       </div>
       <div id="body">
         <div id="body-left"></div>
